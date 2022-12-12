@@ -105,10 +105,10 @@ section {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(../img/guitar1.jpg) no-repeat;
+    
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(to bottom, rgb(253, 211, 211), transparent);
+    background: rgba(255, 51, 153, .05);
 }
 
 .home .content {
