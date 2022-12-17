@@ -65,14 +65,13 @@ section {
 
 .btn:hover {
     background-color: red;
-} 
+}
 
 .header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-
     background-color: #fff;
     padding: 2rem 9%;
 
@@ -118,33 +117,58 @@ section {
 }
 
 .home {
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
+    padding: 40px;
+    background: url(../img/banner-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.home .content {
-    max-width: 50rem;
+.home .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
-.home .content h3 {
-    font-size: 6rem;
+.home .row .content {
+    margin-top: 10rem;
+    flex: 1 1 42rem;
+}
+
+.home .row .books-slider {
+    flex: 1 1 42rem;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.home .row .books-slider a img {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    height: 15rem;
+}
+
+.home .row .books-slider a:hover img {
+    transform: scale(.9);
+}
+
+.home .row .books-slider .stand {
+    width: 100%;
+}
+
+.home .row .content h3 {
     color: #333;
+    font-size: 4.5rem;
+}
+
+.home .row .content p {
+    color: #666;
+    font-size: 1.4rem;
+    line-height: 2;
+    padding: 1rem 0;
 }
 
 .home .content span {
     font-size: 3.5rem;
     color: red;
-    padding: 1rem 0;
-    line-height: 1.5;
-}
-
-.home .content p {
-    font-size: 1.5rem;
-    font-weight: normal;
-    color: #333;
     padding: 1rem 0;
     line-height: 1.5;
 }
@@ -391,7 +415,6 @@ section {
 }
 
 .about .row .content p {
-    text-indent: 20px;
     font-size: 1.5rem;
     color: #999;
     padding: .5rem 0;
@@ -481,7 +504,12 @@ section {
 }
 
 
+
+
 /* Media Queries */
+
+
+
 
 @media screen and (max-width: 992px) {
 
@@ -529,8 +557,16 @@ section {
         display: block;
     }
 
-    .home .content h3 {
-        font-size: 5rem;
+    .home .row .books-slider {
+        margin-top: 5rem;
+    }
+
+    .home .row .content {
+        text-align: center;
+    }
+
+    .home .row .content h3 {
+        font-size: 4.5rem;
     }
 
     .home .content span {
