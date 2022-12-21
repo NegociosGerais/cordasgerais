@@ -1,4 +1,4 @@
-var swiper = new Swiper(".books-slider", {
+var swiper = new Swiper(".slide-slider", {
 
   loop: true,
   centeredSlides: true,
@@ -47,6 +47,29 @@ var swiper = new Swiper(".featured-slider", {
       },
       1024: {
         slidesPerView: 4,
+      },
+    },
+  });
+
+  var swiper = new Swiper(".arrivals-slider", {
+
+    spaceBetween: 10,
+    loop: true,
+    centeredSlides: true,
+    autoplay: {
+        delay: 8000,
+        disableOnInteraction: false,
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
       },
     },
   });
