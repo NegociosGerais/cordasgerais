@@ -57,7 +57,7 @@ var swiper = new Swiper(".featured-slider", {
     loop: true,
     centeredSlides: true,
     autoplay: {
-        delay: 8000,
+        delay: 9500,
         disableOnInteraction: false,
     },
 
