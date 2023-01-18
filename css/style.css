@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+* {
+    transition: .3s;
+}
+
 .light-theme {
 
     /* Colors light-theme */
@@ -227,13 +231,12 @@ section {
 
 .afiliate nav a {
     color: var(--white);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 1rem;
 }
 
 .afiliate nav a:hover {
     color: var(--foreground-secundary);
-    transition: .3s ease all;
 }
 
 /* Header */
@@ -414,7 +417,6 @@ header .btn-group {
 }
 
 .home .row .strings-slider a:hover img {
-    transition: .3s ease all;
     transform: scale(.9);
 }
 
@@ -443,7 +445,6 @@ header .btn-group {
     text-align: center;
     position: relative;
     overflow: hidden;
-    transition: .3s ease all;
 }
 
 .featured .featured-slider .box:hover {
@@ -455,7 +456,6 @@ header .btn-group {
 }
 
 .featured .featured-slider .box:hover .img {
-    transition: .3s ease all;
     transform: scale(.9);
 }
 
@@ -528,7 +528,6 @@ header .btn-group {
     text-align: center;
     position: relative;
     overflow: hidden;
-    transition: .3s ease all;
 }
 
 .featured-2 .featured-slider .box:hover {
@@ -540,7 +539,6 @@ header .btn-group {
 }
 
 .featured-2 .featured-slider .box:hover .img {
-    transition: .3s ease all;
     transform: scale(.9);
 }
 
@@ -596,7 +594,6 @@ header .btn-group {
 
 .arrivals .arrivals-slider .box:hover {
     border: .1rem solid var(--background-secundary);
-    transition: .3s ease all;
     transform: scale(.9);
 }
 
@@ -822,6 +819,12 @@ footer .wrapper {
 
     .container {
         max-width: 1150px;
+    }
+
+    .afiliate nav a {
+        color: var(--white);
+        font-size: 1.5rem;
+        padding: 1rem;
     }
 
     header .btn-group {
